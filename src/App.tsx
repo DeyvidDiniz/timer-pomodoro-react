@@ -4,8 +4,11 @@ import { BrowserRouter } from 'react-router-dom'
 import { GlobalStyle } from './styles/global'
 import { defaultTheme } from './styles/themes/default'
 import { Router } from './Router'
+import { Home } from './Home'
 
 export function App() {
+  return <Home />
+  /*
   return (
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
@@ -14,4 +17,5 @@ export function App() {
       <GlobalStyle />
     </ThemeProvider>
   )
+  */
 }
